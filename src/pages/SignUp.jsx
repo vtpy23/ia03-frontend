@@ -3,7 +3,7 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useState } from "react";
 
-const API_URL = "http://localhost:3000/user/register"; // Thay bằng backend URL khi deploy
+const API_URL = "https://ia03-backend-96ta.onrender.com"; // Thay bằng backend URL khi deploy
 
 const registerUser = async (data) => {
   const res = await axios.post(API_URL, data);
